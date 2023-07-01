@@ -1,0 +1,157 @@
+:root{
+	--green: #04ddb2;
+	--grey: #333;
+}
+
+*, *:after, *:before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+/*	outline: 1px solid red;*/
+	font-family: lab-regular;
+	max-width: 100%;
+	color: var(--grey);
+}
+
+::selection{
+	background-color: rgba(0,230,184,.2);
+}
+
+@font-face {
+	font-family: lab-regular;
+	src: url("./assets/fonts/LabGrotesque-Regular.woff2");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: lab-medium;
+	src: url("./assets/fonts/LabGrotesque-Medium.woff2");
+	font-weight: medium;
+}
+
+@font-face {
+	font-family: lab-bold;
+	src: url("./assets/fonts/LabGrotesque-Bold.woff2");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: lab-boldest;
+	src: url("./assets/fonts/LabGrotesque-Black.woff2");
+	font-weight: bolder;
+}
+
+#container{
+	position: relative;
+/*	padding: 0 2.1rem;*/
+}
+
+#main, #footer{
+	padding-inline: 24px;
+}
+
+#header{
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	backdrop-filter: blur(20px);
+	background-color: hsla(0, 0%, 100%, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 5rem;
+	padding-inline: 32px;
+}
+
+#header--logo{
+	width: 84px;
+}
+
+#hamburger{
+	cursor: pointer;
+    padding: 7px;
+    border-radius: 100%;
+    background-color: #eef0f2;
+    font-size: 24px;
+}
+
+
+#main{
+	margin-block: 40px 20px;
+	text-align: center;
+}
+
+.main--heading, span{
+	font-size: 38px;
+	font-family: lab-boldest;
+	letter-spacing: 0.1px;
+	line-height: 38px;
+}
+
+.main--paragraph{
+	margin-inline: 8px; 
+	font-size: 18px; 
+	line-height: 26px;
+	margin-block: 10px;
+}
+
+
+#main--video{
+	margin-block: 52px;
+	border-radius: 24px;
+}
+
+
+#main--download-btn{
+	background-color: var(--green);
+	color: white;
+	margin-block: 35px;
+	font-size: 18px;
+	font-family: lab-boldest;
+	padding: 10.5px 34px;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+}
+
+
+#footer{
+	border-top: 1px solid #ccc;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footer--content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-block: 55px 10px;
+	margin-inline: 36px;
+}
+
+.footer--content>*{
+	margin-block: 8.5px;
+}
+
+.footer--btns{
+	text-decoration: none;
+}
+
+.footer--icons{
+	font-size: 20px;
+	color: white;
+	background-color: var(--green);
+	border-radius:50%;
+	padding: 10px;
+}
+
+#footer--copyright{
+	margin-bottom: 82px;
+}
+
+#footer--logo{
+	width: 70px;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "refreshing-my-knowldege",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { 
+    "start": "npm:live-server",
+    "live-server": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*, !.git/**/*' --directory --port 7777"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
