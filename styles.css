@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-/*	outline: 1px solid red;*/
+	outline: 1px solid red;
 	font-family: lab-regular;
 	max-width: 100%;
 	color: var(--grey);
@@ -52,16 +52,13 @@
 
 #header{
 	position: sticky;
-	z-index: 1;
+	z-index: 2;
 	top: 0px;
 	left: 0px;
-	backdrop-filter: blur(20px);
-	background-color: hsla(0, 0%, 100%, 0.8);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 5rem;
-	padding-inline: 32px;
 }
 
 #header--logo{
@@ -76,6 +73,49 @@
     font-size: 24px;
 }
 
+#header, #header-extension{	
+	backdrop-filter: blur(20px);
+	background-color: hsla(0, 0%, 100%, 0.8);
+	padding-inline: 32px;
+}
+
+#header-extension{
+	position: fixed;
+/*	top: 5rem;*/
+top: -70%;
+	left: 0;
+	background-color:red;
+	right: 0px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 32px 24px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 60px -10px;
+	border-top: 1px solid hsla(0, 0%, 90%, 0.6);
+	transition: all 0.3s cubic-bezier(0, 0.04, 0, 0.54) 1s
+/*	transform: translate(0, -600px);*/
+/*	animation: testing 0.3s cubic-bezier(0, 0.04, 0, 0.54) 1s forwards;*/
+/*	bottom: 100%;*/
+}
+
+.header-extension--links{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: lab-medium;
+	padding-block: 20px;
+}
+
+.header-extension--download-btn{
+	background-color: var(--green);
+	margin-block: 40px;
+	color: white;
+	font-size: 20px;
+	font-family: lab-boldest;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	padding-block: 13px;
+}
+
 
 #main{
 	margin-block: 40px 20px;
@@ -87,13 +127,18 @@
 	font-family: lab-boldest;
 	letter-spacing: 0.1px;
 	line-height: 38px;
+	max-width: 270px;
+	margin-inline: auto;
 }
 
 .main--paragraph{
-	margin-inline: 8px; 
+	text-align: center;
+	padding-inline: 8px; 
+	margin-inline: auto;
 	font-size: 18px; 
 	line-height: 26px;
 	margin-block: 10px;
+	max-width: 400px;
 }
 
 
