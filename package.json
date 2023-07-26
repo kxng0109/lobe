@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
-    "start": "npm:live-server",
-    "live-server": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*, !.git/**/*' --directory --port 7777"
+  "scripts": {
+    "live-server": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*, !.git/**/*' --directory --port 7777 --browser"
   },
   "keywords": [],
   "author": "",
