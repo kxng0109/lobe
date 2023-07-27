@@ -246,7 +246,7 @@ top: -70%;
 	}
 
 	#footer{
-		max-width: unset;
+		max-width: 650px;
 		margin-block: 0px;
 		padding-block: 60px;
 		align-items: center;
@@ -258,14 +258,24 @@ top: -70%;
 		align-items: flex-start;
 		justify-content: flex-start;
 		height: 222px;
+		flex: auto;
 	}
 
 	#footer--copyright{
 		order: -1;
+		margin-block: 0;
 	}
 
 	.footer--btns, .footer--content>h4{
 		margin-inline: 14px;
+	}
+
+	.footer--content>h4{
+		margin-top: 0;
+	}
+
+	.footer--btns{
+		margin-block: 14px;
 	}
 
 	#footer--logo{
