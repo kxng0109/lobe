@@ -13,6 +13,19 @@
 	color: var(--grey);
 }
 
+a{	
+	text-decoration: none;
+}
+
+button{	
+	background-color: var(--green);
+	color: white;
+	outline: none;
+	border: none;
+	border-radius: 25px;
+	font-family: lab-boldest;
+}
+
 ::selection{
 	background-color: rgba(0,230,184,.2);
 }
@@ -55,9 +68,10 @@
 	z-index: 2;
 	top: 0px;
 	left: 0px;
-	display: flex;
+	/*display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-between;*/
+	display: block;
 	height: 5rem;
 }
 
@@ -71,6 +85,10 @@
     border-radius: 100%;
     background-color: #eef0f2;
     font-size: 24px;
+}
+
+#header-nav, #header-nav--download-btn{
+	display: none;
 }
 
 #header, #header-extension{	
@@ -98,21 +116,14 @@ top: -70%;
 }
 
 .header-extension--links{
-	text-decoration: none;
 	font-size: 20px;
 	font-family: lab-medium;
 	padding-block: 20px;
 }
 
 .header-extension--download-btn{
-	background-color: var(--green);
 	margin-block: 40px;
-	color: white;
 	font-size: 20px;
-	font-family: lab-boldest;
-	border: none;
-	outline: none;
-	border-radius: 25px;
 	padding-block: 13px;
 }
 
@@ -148,15 +159,9 @@ top: -70%;
 
 
 #main--download-btn{
-	background-color: var(--green);
-	color: white;
 	margin-block: 35px;
 	font-size: 18px;
-	font-family: lab-boldest;
 	padding: 10.5px 34px;
-	border: none;
-	outline: none;
-	border-radius: 25px;
 }
 
 
@@ -186,16 +191,13 @@ top: -70%;
 	margin-block: 8.5px;
 }
 
-.footer--btns{
-	text-decoration: none;
-}
-
 .footer--icons{
 	font-size: 20px;
 	color: white;
 	background-color: var(--green);
 	border-radius:50%;
 	padding: 10px;
+	margin-inline: auto
 }
 
 #footer--copyright{
@@ -236,7 +238,7 @@ top: -70%;
 	}
 
 	#main--video{
-		max-width: 520px;
+		max-width: 80vw;
 	}
 
 	#main--download-btn{
@@ -284,5 +286,45 @@ top: -70%;
 
 	#container{
 		padding-bottom: 60px;
+	}
+}
+
+
+@media screen and (min-width: 801px) {
+	#header-extension, #header-menu{
+		display: none;
+		animation: none;
+	}
+
+	#header{
+		justify-content: unset;
+		padding-inline: 21px;
+		position: relative;
+	}
+
+	#header-nav{
+		display: flex;
+		align-items: center;
+	}
+
+	.header-nav--links{
+		font-size: 18px;
+		margin-right: 30px;
+	}
+
+	.header-nav--links:last-of-type{
+		margin-right: 0px;
+	}
+
+	#header-nav--download-btn{
+		position: sticky;
+		right: 0;
+		margin-inline: 0;
+/*		margin: 0 0 0 20px;*/
+		padding: 12px 21px;
+	}
+
+	#main--video{
+		max-width: 83vw;
 	}
 }
