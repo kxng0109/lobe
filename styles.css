@@ -24,6 +24,7 @@ button{
 	border: none;
 	border-radius: 25px;
 	font-family: lab-boldest;
+	cursor: pointer;
 }
 
 ::selection{
@@ -68,10 +69,9 @@ button{
 	z-index: 2;
 	top: 0px;
 	left: 0px;
-	/*display: flex;
+	display: flex;
 	align-items: center;
-	justify-content: space-between;*/
-	display: block;
+	justify-content: space-between;
 	height: 5rem;
 }
 
@@ -142,7 +142,7 @@ top: -70%;
 	margin-inline: auto;
 }
 
-.main--paragraph{
+#main--paragraph{
 	text-align: center;
 	padding-inline: 8px; 
 	margin: 10px auto;
@@ -155,6 +155,7 @@ top: -70%;
 #main--video{
 	margin-block: 52px;
 	border-radius: 24px;
+	cursor: pointer;
 }
 
 
@@ -227,7 +228,7 @@ top: -70%;
 		max-width: 410px;
 	}
 
-	.main--paragraph{
+	#main--paragraph{
 		font-size: 24px;
 		line-height: 35px;
 		max-width: 520px;
@@ -248,7 +249,7 @@ top: -70%;
 	}
 
 	#footer{
-		max-width: 650px;
+		max-width: 660px;
 		margin-block: 0px;
 		padding-block: 60px;
 		align-items: center;
@@ -299,32 +300,99 @@ top: -70%;
 	#header{
 		justify-content: unset;
 		padding-inline: 21px;
-		position: relative;
 	}
 
 	#header-nav{
 		display: flex;
 		align-items: center;
+		margin-inline: auto;
 	}
 
 	.header-nav--links{
 		font-size: 18px;
-		margin-right: 30px;
-	}
-
-	.header-nav--links:last-of-type{
-		margin-right: 0px;
+		margin-left: 41px;
+		font-family: lab-medium;
+		color: grey;
 	}
 
 	#header-nav--download-btn{
 		position: sticky;
-		right: 0;
 		margin-inline: 0;
-/*		margin: 0 0 0 20px;*/
 		padding: 12px 21px;
+		display: block;
+		right: 21px;
+		color: white;
+		font-family: lab-boldest;
 	}
 
 	#main--video{
 		max-width: 83vw;
 	}
+}
+
+@media screen and (min-width: 929px) {
+	#footer{
+/*		width: 71.12vw;*/
+		max-width: 780px;
+	}
+
+	.footer--icons{
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	#header{
+		padding-inline: 66px;
+	}
+
+	.header-nav--links{
+		margin-left: 48px;
+	}
+
+	#main{
+		margin-top: 64px;
+		padding-bottom: 66px;
+	}
+
+	.main--heading, span{
+		font-size: 64px;
+		line-height: 67px;
+		max-width: 430px;
+	}
+
+	.main--heading2{
+		margin-top: 50px;
+	}
+
+	#main--paragraph{
+		font-size: 26px;
+		line-height: 38px;
+		max-width: 560px;
+	}
+
+	#main--video{
+		max-width: 960px;
+	}
+
+	#header-nav--download-btn{
+		padding-block: 13.5px;
+	}
+
+	#footer{
+		max-width: 960px;
+	}
+
+	.footer--content{
+		margin-right: 35px;
+	}
+
+	#social-media{
+		flex-direction: row;
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 1701px){
+	
 }
