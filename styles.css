@@ -7,7 +7,6 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-/*	outline: 1px solid red;*/
 	font-family: lab-regular;
 	max-width: 100%;
 	color: var(--grey);
@@ -22,7 +21,7 @@ button{
 	color: white;
 	outline: none;
 	border: none;
-	border-radius: 25px;
+	border-radius: 35px;
 	font-family: lab-boldest;
 	cursor: pointer;
 }
@@ -151,6 +150,10 @@ top: -70%;
 	max-width: 400px;
 }
 
+#video--container{
+	padding-inline: 8px;
+}
+
 
 #main--video{
 	margin-block: 52px;
@@ -236,6 +239,10 @@ top: -70%;
 
 	.main--heading2{
 		margin-top: 24px;
+	}
+
+	#video--container{
+		 padding-top: 5px;
 	}
 
 	#main--video{
@@ -394,5 +401,56 @@ top: -70%;
 }
 
 @media screen and (min-width: 1701px){
-	
+	#header{
+		padding-inline: 105px;
+	}
+
+	#main{
+		padding-bottom: 105px;
+	}
+
+	.main--heading, span{
+		font-size: 80px;
+		line-height: 84px;
+		max-width: 550px;
+	}
+
+	#main--paragraph{
+		font-size: 32px;
+		line-height: 46px;
+	}
+
+	#main--paragraph{
+		max-width: 650px;
+	}
+
+	#video--container{
+		padding-top: 13px;
+	}
+
+	#main--video{
+		max-width: 1144px;
+	}
+
+	.main--heading2{
+		margin-top: 84px;
+	}
+
+	#main--download-btn{
+		padding: 18px 43px;
+		font-size: 24px;
+	}
+
+	#footer{
+		max-width: 1150px;
+		padding-block: 115px;
+	}
+
+	.footer--content{
+		margin-right: 28px;
+	}
+
+	.footer--btns, .footer--copyright-paragraph, .footer--content>h4{
+		font-size: 20px;
+	}
 }
