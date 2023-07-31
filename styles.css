@@ -78,12 +78,16 @@ button{
 	width: 84px;
 }
 
-#hamburger{
+.hamburger{
 	cursor: pointer;
     padding: 7px;
     border-radius: 100%;
     background-color: #eef0f2;
     font-size: 24px;
+}
+
+#close--hamburger{
+	display: none;
 }
 
 #header-nav, #header-nav--download-btn{
