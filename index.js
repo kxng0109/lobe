@@ -3,7 +3,6 @@ let openHamburgerBtn = document.querySelector("#open--hamburger");
 let closeHamburgerBtn = document.querySelector("#close--hamburger");
 let headerExtension = document.querySelector('#header-extension');
 let extensionLinks = document.querySelectorAll('.he');
-let video = document.querySelector('#main--video');
 
 menuBtn.onclick = () =>{
 	if (getComputedStyle(openHamburgerBtn).display === 'inline-block') {
