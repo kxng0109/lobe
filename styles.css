@@ -56,7 +56,6 @@ button{
 
 #container{
 	position: relative;
-/*	padding: 0 2.1rem;*/
 }
 
 #main, #footer{
@@ -94,6 +93,10 @@ button{
 	display: none;
 }
 
+.header-nav--links, .footer--icons, .footer--btns{
+	transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
 #header, #header-extension{	
 	backdrop-filter: blur(20px);
 	background-color: hsla(0, 0%, 100%, 0.8);
@@ -102,32 +105,40 @@ button{
 
 #header-extension{
 	position: fixed;
-/*	top: 5rem;*/
-top: -70%;
+	z-index: 1;
+	top: -485px;
 	left: 0;
-	background-color:red;
 	right: 0px;
 	display: flex;
 	flex-direction: column;
 	padding: 10px 32px 24px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 60px -10px;
 	border-top: 1px solid hsla(0, 0%, 90%, 0.6);
-	transition: all 0.3s cubic-bezier(0, 0.04, 0, 0.54) 1s
-/*	transform: translate(0, -600px);*/
-/*	animation: testing 0.3s cubic-bezier(0, 0.04, 0, 0.54) 1s forwards;*/
-/*	bottom: 100%;*/
+	transition: all 0.3s cubic-bezier(0, 0.04, 0, 0.54);
 }
 
 .header-extension--links{
 	font-size: 20px;
+	color: grey;
 	font-family: lab-medium;
 	padding-block: 20px;
+	opacity: 0;
+	transition: all 0.5s cubic-bezier(0, 0.04, 0, 0.54);
+}
+
+.header-extension--links:hover{
+	color: black;
 }
 
 .header-extension--download-btn{
 	margin-block: 40px;
 	font-size: 20px;
 	padding-block: 13px;
+	transition: all 0.2s ease-in-out;
+}
+
+.header-extension--download-btn:hover{
+	transform: scale(1.03);
 }
 
 
@@ -154,15 +165,23 @@ top: -70%;
 	max-width: 400px;
 }
 
-#video--container{
-	padding-inline: 8px;
-}
-
-
 #main--video{
 	margin-block: 52px;
 	border-radius: 24px;
 	cursor: pointer;
+	padding-inline: 8px;
+	transition: all 0.4s ease-in-out;
+	background-color: #e8edf0;
+	box-shadow:  -2px 30px 99px -70px rgba(0,0,0,0.28);
+	-webkit-box-shadow:  -2px 30px 99px -70px rgba(0,0,0,0.28);
+	-moz-box-shadow:  -2px 30px 99px -70px rgba(0,0,0,0.28);
+}
+
+#main--video:hover{
+	transform: scale(1.02);	
+	box-shadow: -2px 30px 99px 5px rgba(0,0,0,0.28);
+	-webkit-box-shadow: -2px 30px 99px 5px rgba(0,0,0,0.28);
+	-moz-box-shadow: -2px 30px 99px 5px rgba(0,0,0,0.28);
 }
 
 
@@ -170,6 +189,12 @@ top: -70%;
 	margin-block: 35px;
 	font-size: 18px;
 	padding: 10.5px 34px;
+	font-family: lab-bold;
+	transition: transform 0.4s ease-in-out;
+}
+
+#main--download-btn:hover{
+	transform: scale(1.05);		
 }
 
 
@@ -189,10 +214,7 @@ top: -70%;
 	align-items: center;
 	justify-content: center;
 	padding-block: 55px 10px;
-/*	margin-inline: 36px;*/
-/*	width: 50%;*/
 	min-width: 156px;
-/*	max-width: 324px;*/
 }
 
 .footer--content>*{
@@ -205,7 +227,12 @@ top: -70%;
 	background-color: var(--green);
 	border-radius:50%;
 	padding: 10px;
-	margin-inline: auto
+	margin-inline: auto;
+	cursor: pointer;
+}
+
+.footer--icons:hover, .footer--btns:hover{
+	transform: scale(1.05);	
 }
 
 #footer--copyright{
@@ -326,6 +353,11 @@ top: -70%;
 		color: grey;
 	}
 
+	.header-nav--links:hover{
+		transform: scale(1.05);	
+		color: black;
+	}
+
 	#header-nav--download-btn{
 		position: sticky;
 		margin-inline: 0;
@@ -343,7 +375,6 @@ top: -70%;
 
 @media screen and (min-width: 929px) {
 	#footer{
-/*		width: 71.12vw;*/
 		max-width: 780px;
 	}
 

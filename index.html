@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="./styles.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+		<script type="text/javascript" src="./index.js" defer></script>
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" async></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" async></script>
 		<title>Lobe Tour | Machine Learning Made Easy</title>
@@ -13,7 +15,9 @@
 		<div id="container">
 
 			<header id="header">
-				<img src="./assets/logo.svg" id="header--logo">
+				<a href="#">
+					<img src="./assets/logo.svg" id="header--logo">					
+				</a>
 				<div id="header-container" style="display: none;"></div>
 				<div id="header-menu">
 					<ion-icon id="open--hamburger" class="hamburger" name="menu-sharp"></ion-icon>
@@ -21,7 +25,6 @@
 				</div>
 
 				<div id="header-nav">
-					<!-- Animate them to become black on hover -->
 					<a href="#" class="header-nav--links">Overview</a>
 					<a href="#" class="header-nav--links">Examples</a>
 					<a href="#" class="header-nav--links" style="color: black;">Tour</a>
@@ -32,13 +35,12 @@
 			</header>
 
 			<div id="header-extension">
-				<!-- Animate them to become black on hover -->
-				<a href="#" class="header-extension--links">Overview</a>
-				<a href="#" class="header-extension--links">Examples</a>
-				<a href="#" class="header-extension--links">Tour</a>
-				<a href="#" class="header-extension--links">Blog</a>
-				<a href="#" class="header-extension--links">Help</a>
-				<button class="header-extension--download-btn">Download</button>
+				<a href="#" class="header-extension--links he">Overview</a>
+				<a href="#" class="header-extension--links he">Examples</a>
+				<a href="#" class="header-extension--links he" style="color: black;">Tour</a>
+				<a href="#" class="header-extension--links he">Blog</a>
+				<a href="#" class="header-extension--links he">Help</a>
+				<button class="header-extension--download-btn he">Download</button>
 			</div>
 
 			<main id="main">
@@ -47,14 +49,14 @@
 
 				<div id="video--container" >
 					<video width="100%" height="auto" poster="./assets/Video.jpg" id="main--video">
-						<!-- onclic it should load "<iframe width="566" height="353" src="https://www.youtube.com/embed/Mdcw3Sb98DA" title="Introducing Lobe  |  Build your first machine learning model in ten minutes." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>" -->
+						<iframe loading="eager" width="566" height="353" src="https://www.youtube.com/embed/Mdcw3Sb98DA" title="Introducing Lobe  |  Build your first machine learning model in ten minutes." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
 						<!-- <source src="movie.mp4" type="video/mp4">
 						<source src="movie.ogg" type="video/ogg"> -->
 					</video>
 				</div>
 
 				<h2 class="main--heading main--heading2">Train your app with Lobe</h2>
-				<button id="main--download-btn">Download</button><!-- Dont forget to add the hover animation -->
+				<button id="main--download-btn">Download</button>
 			</main>
 
 			<footer id="footer">
